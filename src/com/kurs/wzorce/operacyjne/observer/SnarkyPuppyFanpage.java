@@ -1,4 +1,4 @@
-package com.kurs.wzorce.operacyjne.Observer;
+package com.kurs.wzorce.operacyjne.observer;
 
 import java.util.ArrayList;
 import java.util.List;

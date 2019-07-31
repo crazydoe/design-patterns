@@ -1,6 +1,4 @@
-package com.kurs.wzorce.operacyjne.Observer;
-
-import java.sql.SQLOutput;
+package com.kurs.wzorce.operacyjne.observer;
 
 public class Email implements Observer {
     @Override

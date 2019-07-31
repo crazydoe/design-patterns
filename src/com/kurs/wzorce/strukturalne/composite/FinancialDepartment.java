@@ -10,6 +10,11 @@ public class FinancialDepartment implements Department {
         System.out.println(getClass().getSimpleName());
     }
 
+    @Override
+    public void addDepartment(Department department) {
+        throw new RuntimeException("Unimplemented");
+    }
+
     public FinancialDepartment(Integer id, String name) {
         this.id = id;
         this.name = name;

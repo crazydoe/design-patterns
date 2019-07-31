@@ -5,12 +5,12 @@ import static java.lang.System.out;
 public class Client {
 
     public static void main(String... args) {
-        Product flower = new TapeCreator().create();
-        Product ball = new VinylCreator().create();
+        Product tape = new TapeCreator().create();
+        Product vinyl = new VinylCreator().create();
 
-        printProduct(flower);
+        printProduct(tape);
         out.println();
-        printProduct(ball);
+        printProduct(vinyl);
 
 
     }

@@ -12,8 +12,8 @@ public class Originator implements Memorizable{
     }
 
     @Override
-    public void restoreState(String state) {
-        this.state = state;
+    public void restoreState(Memento state) {
+        this.state = state.getState();
     }
 
     @Override

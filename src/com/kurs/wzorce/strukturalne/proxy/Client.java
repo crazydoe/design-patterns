@@ -3,14 +3,16 @@ package com.kurs.wzorce.strukturalne.proxy;
 public class Client {
 
     public static void main(String... args) {
-        Image image = new ProxyImage("test_10mb.jpg");
+        sendMessage("123", "message content");
+        sendMessage("123123123", "message content");
+    }
 
-        //image will be loaded from disk
-        image.display();
-        System.out.println();
-
-        //image will not be loaded from disk
-        image.display();
-
+    public static void sendMessage(String number, String content) {
+        SmsGateway gateway = new TMobileProxy();
+        try {
+            gateway.sendMessage(number, content);
+        } catch (RuntimeException exc) {
+            System.out.println(exc.getMessage());
+        }
     }
 }
